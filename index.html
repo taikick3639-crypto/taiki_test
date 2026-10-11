@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>今期アニメランキング</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">Anime Rank</div>
+        <nav>
+          <a href="#rank">ランキング</a>
+          <a href="#trend">話題</a>
+          <a href="#about">概要</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <p class="eyebrow">今放送中のアニメ</p>
+        <h1>今期の注目アニメランキング</h1>
+        <p class="lead">
+          視聴率・SNS反応・評価をもとに、話題の作品を簡単に確認できるテストページです。
+        </p>
+        <button id="refreshBtn" class="primary-btn">ランキング更新</button>
+      </section>
+
+      <section id="rank" class="ranking-wrap">
+        <div class="section-head">
+          <h2>ページトップランキング</h2>
+          <span id="updatedAt">更新中...</span>
+        </div>
+
+        <div id="rankingList" class="ranking-list"></div>
+      </section>
+
+      <section id="trend" class="summary-grid">
+        <article class="summary-card">
+          <span class="label">最高評価</span>
+          <h3>1位：葬送のフリーレン</h3>
+          <p>作品の完成度と反応が高く、安定して上位に位置しています。</p>
+        </article>
+
+        <article class="summary-card">
+          <span class="label">急上昇</span>
+          <h3>2位：薬屋のひとりごと</h3>
+          <p>SNSでの話題が急増し、毎週注目度が伸びています。</p>
+        </article>
+
+        <article class="summary-card">
+          <span class="label">注目度</span>
+          <h3>3位：勇者パーティー</h3>
+          <p>コミカルな演出と高いリピート視聴で、人気が維持されています。</p>
+        </article>
+      </section>
+
+      <section id="about" class="note-box">
+        <h2>テストページの目的</h2>
+        <p>
+          このページは、今放送中のアニメをランキング形式で見せるための簡単な試験用レイアウトです。
+          実運用では視聴率やSNSデータを自動収集し、順位を更新する仕組みを追加できます。
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
